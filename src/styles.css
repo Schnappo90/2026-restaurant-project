@@ -1,3 +1,88 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-    background-color: green;
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-inline-size: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+}
+
+ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-btn {
+    width: 4rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main-banner {
+    height: 28.125rem; /* 450px */
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+}
+
+.main-banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item__badge {
+    color: green;
+    font-weight: 800;
+}
+
+.menu-page.container ul {
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
