@@ -16,87 +16,63 @@
    ============================================================ */
 
 :root {
- 
-  /* --- Fonts --- */
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body:    'DM Sans', Helvetica, sans-serif;
- 
-  /* --- Brand colours --- */
-  --color-accent:       rgb(200, 75, 17);
-  --color-accent-hover: rgb(224, 90, 26);
-  --color-gold:         rgb(232, 160, 96);
- 
-  /* --- Backgrounds --- */
-  --color-bg-page:    rgb(15, 13, 11);
-  --color-bg-card:    rgb(24, 20, 16);
-  --color-bg-section: rgb(20, 15, 10);
-  --color-bg-footer:  rgb(8, 6, 4);
- 
-  /* --- Text --- */
-  --color-text-primary:   rgb(245, 240, 232);
-  --color-text-secondary: rgb(201, 185, 154);
-  --color-text-muted:     rgb(168, 144, 112);
-  --color-text-dim:       rgb(122, 104, 80);
-  --color-text-footer:    rgb(90, 78, 58);
-  --color-text-footnote:  rgb(58, 48, 40);
- 
-  /* --- Borders --- */
-  --color-border:        rgba(255, 255, 255, 0.07);
-  --color-border-strong: rgba(255, 255, 255, 0.12);
-  --color-border-accent: rgba(200, 75, 17, 0.35);
- 
-  /* --- Chef's specials cards --- */
-  --card-bg:             rgb(24, 20, 16);
-  --card-border:         rgba(255, 255, 255, 0.07);
-  --card-border-hover:   rgba(200, 75, 17, 0.35);
- 
-  --card-img-ember-from: rgb(42, 14, 0);
-  --card-img-ember-to:   rgb(61, 26, 6);
-  --card-img-green-from: rgb(13, 26, 13);
-  --card-img-green-to:   rgb(26, 46, 10);
-  --card-img-plum-from:  rgb(26, 10, 23);
-  --card-img-plum-to:    rgb(46, 13, 26);
- 
-  --card-btn-bg:         rgba(200, 75, 17, 0.15);
-  --card-btn-border:     rgba(200, 75, 17, 0.30);
-  --card-btn-color:      rgb(200, 75, 17);
- 
-  /* --- Font sizes --- */
-  --fs-hero:       54px;
-  --fs-section:    34px;
-  --fs-stat:       34px;
-  --fs-card-title: 17px;
-  --fs-why-title:  18px;
-  --fs-price:      18px;
-  --fs-logo:       20px;
-  --fs-logo-sm:    16px;
-  --fs-nav:        14px;
-  --fs-hero-sub:   15px;
-  --fs-body:       14px;
-  --fs-card-desc:  13px;
-  --fs-footer:     13px;
-  --fs-small:      12px;
-  --fs-eyebrow:    11px;
- 
-  /* --- Font weights --- */
-  --fw-light:   300;
-  --fw-regular: 400;
-  --fw-medium:  500;
-  --fw-bold:    700;
- 
-  /* --- Spacing scale --- */
-  --space-xs:  8px;
-  --space-sm:  12px;
-  --space-md:  20px;
-  --space-lg:  32px;
-  --space-xl:  40px;
-  --space-2xl: 60px;
- 
-  /* --- Border radius --- */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 10px;
-  --radius-xl: 12px;
+
+    /* --- Fonts --- */
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body:    'DM Sans', Helvetica, sans-serif;
+
+    /* --- Brand colours --- */
+    --color-accent:       rgb(200, 75, 17);
+    --color-accent-hover: rgb(224, 90, 26);
+    --color-gold:         rgb(232, 160, 96);
+
+    /* --- Backgrounds --- */
+    --color-bg-page:    rgb(15, 13, 11);
+    --color-bg-card:    rgb(24, 20, 16);
+    --color-bg-section: rgb(20, 15, 10);
+    --color-bg-footer:  rgb(8, 6, 4);
+
+    /* --- Text --- */
+    --color-text-primary:   rgb(245, 240, 232);
+    --color-text-secondary: rgb(201, 185, 154);
+    --color-text-dim:       rgb(122, 104, 80);
+    --color-text-footer:    rgb(90, 78, 58);
+
+    /* --- Borders --- */
+    --color-border:        rgba(255, 255, 255, 0.07);
+    --color-border-strong: rgba(255, 255, 255, 0.12);
+    --color-border-accent: rgba(200, 75, 17, 0.35);
+
+    /* --- Menu card image gradients --- */
+    --card-img-ember-from: rgb(42, 14, 0);
+    --card-img-ember-to:   rgb(61, 26, 6);
+    --card-img-green-from: rgb(13, 26, 13);
+    --card-img-green-to:   rgb(26, 46, 10);
+    --card-img-plum-from:  rgb(26, 10, 23);
+    --card-img-plum-to:    rgb(46, 13, 26);
+
+    /* --- Font sizes --- */
+    --fs-hero:       54px;
+    --fs-section:    34px;
+    --fs-logo:       20px;
+    --fs-logo-sm:    16px;
+    --fs-card-title: 17px;
+    --fs-body:       14px;
+
+    /* --- Font weights --- */
+    --fw-light:   300;
+    --fw-regular: 400;
+    --fw-bold:    700;
+
+    /* --- Spacing scale --- */
+    --space-md:  20px;
+    --space-lg:  32px;
+    --space-xl:  40px;
+    --space-2xl: 60px;
+
+    /* --- Border radius --- */
+    --radius-sm: 4px;
+    --radius-xl: 12px;
 }
 
 
@@ -104,20 +80,17 @@
    3. CSS RESET
    ============================================================ */
 
-/* Box sizing */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* Remove default margin and padding */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Base document */
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -136,7 +109,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings */
 h1,
 h2,
 h3,
@@ -149,12 +121,10 @@ h6 {
     color: var(--color-text-primary);
 }
 
-/* Paragraphs */
 p {
     line-height: 1.65;
 }
 
-/* Links */
 a {
     color: inherit;
     text-decoration: none;
@@ -164,13 +134,11 @@ a:hover {
     color: var(--color-accent);
 }
 
-/* Lists */
 ul,
 ol {
     list-style: none;
 }
 
-/* Images and media */
 img,
 picture,
 video,
@@ -180,7 +148,6 @@ svg {
     max-width: 100%;
 }
 
-/* Form elements inherit font */
 input,
 button,
 textarea,
@@ -188,7 +155,6 @@ select {
     font: inherit;
 }
 
-/* Buttons */
 button {
     cursor: pointer;
     border: none;
@@ -196,18 +162,15 @@ button {
     color: inherit;
 }
 
-/* Remove default fieldset styles */
 fieldset {
     border: none;
 }
 
-/* Tables */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-/* Prevent text overflow on long words */
 p,
 h1,
 h2,
@@ -218,7 +181,21 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/* Container */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* ============================================================
+   4. CONTAINER
+   ============================================================ */
 
 .container {
     width: 100%;
@@ -230,24 +207,24 @@ h6 {
     align-items: center;
 }
 
-/* Remove animations for users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-/* ==== HEADER ===== */
+/* ============================================================
+   5. HEADER
+   ============================================================ */
 
 header {
     padding-block: 1.5rem;
     border-bottom: 1px solid var(--color-border-strong);
+}
+
+header button:hover {
+    color: var(--color-accent-hover);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    font-size: var(--fs-logo-sm);
 }
 
 .logo-group {
@@ -257,7 +234,7 @@ header {
     cursor: default;
 }
 
-.logo-group .logo-illustration {
+.logo-group__illustration {
     height: 2.5rem;
     width: 2.5rem;
     background-color: var(--color-accent-hover);
@@ -268,24 +245,21 @@ header {
     border-radius: 3.125rem;
 }
 
-.logo-group .logo-text {
+.logo-group__text {
     font-family: var(--font-display);
     font-size: var(--fs-logo);
 }
 
-.logo-group .logo-text span {
-    color: var(--color-accent-hover)
+.logo-group__text span {
+    color: var(--color-accent-hover);
 }
 
-nav ul {
-    display: flex;
-    gap: 2rem;
-    font-size: var(--fs-logo-sm);
-}
 
-/* ==== Main Banner Section ==== */
+/* ============================================================
+   6. HERO
+   ============================================================ */
 
-.main-banner {
+.hero {
     min-height: 500px;
     padding-block: var(--space-2xl);
     background-color: var(--color-bg-section);
@@ -295,22 +269,23 @@ nav ul {
     justify-content: center;
 }
 
-.main-banner .container {
+.hero .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.left-header {
+
+.hero__content {
     flex: 1;
 }
 
-.right-header {
+.hero__image {
     display: flex;
     justify-content: center;
     flex: 1;
 }
 
-.right-header .header-img-container {
+.hero__image-placeholder {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -320,44 +295,36 @@ nav ul {
     align-items: center;
     font-size: 200px;
     box-shadow: -1px -1px 113px 20px rgb(190, 4, 4);
-    -webkit-box-shadow: -1px -1px 113px 20px rgb(190, 4, 4);
-    -moz-box-shadow: -1px -1px 113px 20px rgb(190, 4, 4);
 }
 
-.main-banner h1 {
+.hero h1 {
     font-size: var(--fs-hero);
     font-weight: var(--fw-bold);
     margin-block-end: 2rem;
 }
 
-
-.main-banner h1 span {
+.hero h1 span {
     display: block;
-    /* font-size: var(--fs-hero-sub); */
     color: var(--color-gold);
     font-style: italic;
 }
 
-.main-banner h2 {
+.hero h2 {
     font-family: var(--font-body);
     font-weight: var(--fw-light);
     max-width: 60%;
     line-height: 1.5;
-    color: var(--color-text-secondary)
+    color: var(--color-text-secondary);
 }
 
-header button:hover {
-    color: var(--color-accent-hover);
-}
 
-/* ==== Stats Box ==== */
-
+/* ============================================================
+   7. STATS
+   ============================================================ */
 
 .stats .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border); */
 }
 
 .stats__item {
@@ -368,23 +335,15 @@ header button:hover {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--color-border);
-    border-bottom: none;
-    border-top: none;
-    border-right: none;
+    border-left: 1px solid var(--color-border);
 }
 
 .stats__item:first-child {
     border-left: none;
 }
 
-.stats__item:last-child {
-    border-right: none;
-}
-
-
 .stats__value {
-    font-size: var(--fs-stat);
+    font-size: var(--fs-section);
     font-weight: var(--fw-bold);
     color: var(--color-accent);
     line-height: 1;
@@ -394,41 +353,56 @@ header button:hover {
     text-transform: uppercase;
 }
 
-/* ==== Chefs Special Section ==== */ 
 
-.chef-specials-section {
+/* ============================================================
+   8. SPECIALS
+   ============================================================ */
+
+.specials {
     padding-block: var(--space-2xl);
     border-top: 1px solid var(--color-border);
 }
 
-.chef-specials-section .container {
+.specials .container {
     display: grid;
 }
 
-.chef-specials-section .container .header {
+.specials .container .header {
     display: flex;
     justify-content: space-between;
-    align-items:last baseline;
+    align-items: end;
+    margin-block-end: 3rem;
 }
 
-.chef-specials-section .container .header button {
-    color:var(--color-accent);
+.specials .container .header span {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin-block-end: 1rem;
+}
+
+.specials .container .header h3 {
+    font-size: var(--fs-section);
+    font-weight: var(--fw-bold);
+}
+
+.specials .container .header button {
+    color: var(--color-accent);
     border-bottom: 1px solid var(--color-accent);
 }
 
-.chef-specials-section .container .header button:hover {
-        color:var(--color-accent-hover);
-        border-color: var(--color-accent-hover);
+.specials .container .header button:hover {
+    color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
 }
 
-.chef-specials-section .container .card-section {
+.specials .container .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     line-height: initial;
 }
 
-.menu_card__item {
+.menu-card {
     background-color: var(--color-bg-card);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-xl);
@@ -436,11 +410,11 @@ header button:hover {
     overflow: hidden;
 }
 
-.menu_card__item:hover {
+.menu-card:hover {
     border-color: var(--color-border-accent);
 }
 
-.menu_card__item .card_header {
+.menu-card__header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -448,87 +422,87 @@ header button:hover {
     padding: var(--space-xl);
 }
 
-.menu_card__item:nth-child(1) .card_header{
+.menu-card:nth-child(1) .menu-card__header {
     background: linear-gradient(135deg, var(--card-img-ember-from), var(--card-img-ember-to));
 }
 
-.menu_card__item:nth-child(2) .card_header{
+.menu-card:nth-child(2) .menu-card__header {
     background: linear-gradient(135deg, var(--card-img-green-from), var(--card-img-green-to));
 }
 
-.menu_card__item:nth-child(3) .card_header{
-    background: linear-gradient(135deg, var(--card-img-plum-from), var(--card-img-ember-to));
+.menu-card:nth-child(3) .menu-card__header {
+    background: linear-gradient(135deg, var(--card-img-plum-from), var(--card-img-plum-to));
 }
 
-.menu_card__item .card_info {
+.menu-card__body {
     display: grid;
     gap: 0.75rem;
     padding: 1.5rem;
-}
-
-.menu_card__item .card_info  {
     color: var(--color-text-dim);
 }
 
-.menu_card__item .card_info h4 {
+.menu-card__body h4 {
     font-size: var(--fs-card-title);
 }
 
-.menu_card__item .card_info span {
-    color:var(--color-gold);
+.menu-card__price {
+    color: var(--color-gold);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-price);
-}
-/* ==== Three Column Layout ==== */
-
-.three-column-layout {
-    /* background-color: var(--color-bg-section); */
-    border-top: 1px solid var(--color-border)
+    font-size: 18px;
 }
 
-.three-column-layout .container {
+
+/* ============================================================
+   9. FEATURES
+   ============================================================ */
+
+.features {
+    border-top: 1px solid var(--color-border);
+}
+
+.features .container {
     display: grid;
-    padding-block: var(--space-2xl)
+    padding-block: var(--space-2xl);
 }
 
-.container .header {
+.features .container .header {
     margin-block-end: 3rem;
 }
 
-.container .header span {
+.features .container .header span {
     color: var(--color-accent);
     text-transform: uppercase;
     margin-block-end: 1rem;
 }
 
-.container .header h3 {
+.features .container .header h3 {
     font-size: var(--fs-section);
     font-weight: var(--fw-bold);
 }
 
-.three-column-layout .container .card-section {
+.features .container .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
 }
 
-.card__item {
+.feature-card {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem
+    gap: 0.75rem;
 }
 
-.card__item h4 {
+.feature-card h4 {
     font-size: var(--fs-card-title);
 }
 
-.card__item p {
+.feature-card p {
     color: var(--color-text-secondary);
     font-size: var(--fs-card-title);
     font-weight: var(--fw-light);
 }
 
-.card-section .icon {
+.feature-card__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -541,42 +515,44 @@ header button:hover {
     cursor: default;
 }
 
-/* ==== Footer ====  */
+
+/* ============================================================
+   10. FOOTER
+   ============================================================ */
 
 footer {
-    /* padding-block: var(--space-2xl); */
     border-top: 1px solid var(--color-border-strong);
     background-color: var(--color-bg-footer);
 }
 
 footer address,
 footer p,
-footer .hours__row  {
+footer .hours__row {
     color: var(--color-text-dim);
     font-style: normal;
 }
 
-footer .container {
+.footer__main .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: start;
     padding-block: var(--space-2xl);
 }
 
-footer .container .col {
-    padding-inline: 1rem;;
+.footer__col {
+    padding-inline: 1rem;
 }
 
-footer .container .col h5 {
+.footer__col h5 {
     font-size: var(--fs-card-title);
     margin-block-end: 1rem;
 }
 
-footer .container .col .logo-group {
+.footer__col .logo-group {
     margin-block-end: 1rem;
 }
 
-footer .container .col .logo-group .logo-illustration {
+.footer__col .logo-group__illustration {
     height: 20px;
     width: 20px;
     font-size: 0.75rem;
@@ -587,30 +563,29 @@ footer .container .col .logo-group .logo-illustration {
     gap: 1rem;
 }
 
-.visit-us address {
-    margin-block-end: 1rem;
-    font-style: normal;
-}
-
-.copyright-section .container {
+.footer__legal .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-block: var(--space-md);
     border-top: 1px solid var(--color-border);
-    color: var(--color-text-footer)
+    color: var(--color-text-footer);
 }
 
-.footer-links {
+.footer__links {
     display: flex;
     gap: 1rem;
 }
 
-/* ============== MENU PAGE =============== */
+
+/* ============================================================
+   11. PAGES
+   ============================================================ */
 
 .menu-page,
 .about-page {
     display: grid;
+    padding-block: var(--space-2xl);
 }
 
 .menu-page ul {
@@ -619,20 +594,12 @@ footer .container .col .logo-group .logo-illustration {
     margin-block-start: 1.5rem;
 }
 
-.menu-page {
-    padding-block: var(--space-2xl);
+.about-page {
+    min-height: 80vh;
+    align-content: start;
+    gap: 1rem;
 }
 
 .active {
-    color: var(--color-accent)
-}
-
-/* ========= About Pag ========= */
-
-
-.about-page {
-    min-height: 80vh;
-    padding-block: var(--space-2xl);
-    align-content: start;
-    gap: 1rem; 
+    color: var(--color-accent);
 }
