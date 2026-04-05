@@ -11,7 +11,10 @@
 
     <header>
         <div class="container">
-            <div class="logo">Pizza Palace</div>
+            <div class="logo-group">
+                <div class="logo-illustration">&#127829;</div>
+                <div class="logo-text">Pizza <span>Palace</span></div>
+            </div>
             <nav>
                 <ul>
                     <li><button class="nav-btn" data-page="home">Home</button></li>
@@ -24,22 +27,168 @@
 
     <main>
         <div id="content">
-            <!-- <ul class="menu-list">
-                <li class="menu-item">
-                    <div class="menu-item__header">
-                        <h3 class="menu-item__name">`${item.name}`</h3>
-                        <span class="menu-item__price">`${item.price}`</span>
+             <div class="main-banner">
+                <div class="container">
+                    <div class="left-header">
+                    <div class="banner-card">EST. LONDON, 1987</div>
+                    <h1>Crafted with <span>fire & love</span></h1>
+                    <h2>Stone-fired Neapolitan pizza, made from scratch every morning with hand-stretched dough and San
+                        Marzano tomatoes.</h2>
+                        </div> 
+                        <div class="right-header">
+                            <div class="header-img-container">&#127829;</div>
+                        </div>
+                </div>
+            </div>
+            <dl class="stats">
+                <div class="container">
+                    <div class="stats__item">
+                        <dt class="stats__label">Years open</dt>
+                        <dd class="stats__value">37+</dd>
                     </div>
-                    <p class="menu-item__description">`${item.description}`</p>
-                    <div class="menu-item__footer">
-                        <span class="menu-item__calories">`${item.calories} kcal`</span>
-                        <span class="menu-item__badge">V</span>
+                    <div class="stats__item">
+                        <dt class="stats__label">Pizzas on menu</dt>
+                        <dd class="stats__value">24</dd>
                     </div>
-                </li>
-            </ul> -->
+                    <div class="stats__item">
+                        <dt class="stats__label">Oven temperature</dt>
+                        <dd class="stats__value">900°</dd>
+                    </div>
+                    <div class="stats__item">
+                        <dt class="stats__label">Average rating</dt>
+                        <dd class="stats__value">4.9★</dd>
+                    </div>
+                </div>
+            </dl>
+            <div class="chef-specials-section">
+                <div class="container">
+                    <div class="header">
+                        <div class="header-group">
+                            <span>This week</span>
+                            <h3>Chef's Specials</h3>
+                        </div>
+                        <button class="view-menu-btn" data-page="menu">View full menu →</button>
+                    </div>
+                    <div class="card-section">
+                        <div class="menu_card__item">
+                            <div class="card_header">&#128293;</div>
+                            <div class="card_info">
+                                <h4>Diavola Nera</h4>
+                                <p>Squid ink base, 'nduja, smoked mozzarella, pickled chillies, fresh basil.</p>
+                                <span class="price">£14.50</span>
+                            </div>
+                        </div>
+                        <div class="menu_card__item">
+                            <div class="card_header">&#127806;</div>
+                            <div class="card_info">
+                                <h4>Verde Primavera</h4>
+                                <p>Pesto bianco, courgette, asparagus, ricotta, lemon zest, pine nuts.</p>
+                                <span class="price">£14.50</span>
+                            </div>
+                        </div>
+                        <div class="menu_card__item">
+                            <div class="card_header">&#128668;</div>
+                            <div class="card_info">
+                                <h4>Truffle Regina</h4>
+                                <p>Truffle cream, wild mushrooms, taleggio, crispy pancetta, rosemary.</p>
+                                <span class="price">£14.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="three-column-layout">
+                <div class="container">
+                    <div class="header">
+                        <span>Why we're different</span>
+                        <h3>The Palace Way</h3>
+                    </div>
+                    <div class="card-section">
+                        <div class="card__item">
+                            <div class="icon">&#128293;</div>
+                            <h4>Wood-fired Ovens</h4>
+                            <p>Our hand-built Neapolitan ovens reach 900°F, charring the crust in 90 seconds for that
+                                impossible leopard-spot finish.</p>
+                        </div>
+                        <div class="card__item">
+                            <div class="icon">&#127806;</div>
+                            <h4>48-hour cold dough</h4>
+                            <p>Slow fermentation in the cold means a lighter, more digestible base with real flavour —
+                                not
+                                just texture.</p>
+                        </div>
+                        <div class="card__item">
+                            <div class="icon">&#128668;</div>
+                            <h4>Sourced locally</h4>
+                            <p>All produce comes from farms within 50 miles of London. Our mozzarella is made fresh each
+                                morning in Bermondsey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="company-information">
+            <div class="container">
+                <div class="col">
+                    <div class="logo-group">
+                        <div class="logo-illustration">&#127829;</div>
+                        <div class="logo-text">Pizza <span>Palace</span></div>
+                    </div>
+                    <p>London's favourite Neapolitan pizza since 1987. Two locations, one obsession.</p>
+                </div>
+                <div class="col visit-us">
+                    <h5>Visit Us</h5>
+                    <address>12 Napoli Street,
+                        <br>Soho, 
+                        <br>London,
+                        <br>W1F 9AB
+                    </address>
+                    <address>74 The Arches,
+                        <br>Shoreditch,
+                        <br>London,
+                        <br>E1 6RF
+                    </address>
+                </div>
+                <div class="col opening-hours">
+                    <h5>Hours</h5>
+                    <dl class="hours">
+                        <div class="hours__row">
+                            <dt>Mon – Thu:</dt>
+                            <dd><time>12:00</time> – <time>22:00</time></dd>
+                        </div>
+                        <div class="hours__row">
+                            <dt>Fri – Sat:</dt>
+                            <dd><time>12:00</time> – <time>23:00</time></dd>
+                        </div>
+                        <div class="hours__row">
+                            <dt>Sunday:</dt>
+                            <dd><time>12:00</time> – <time>21:00</time></dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="col contact-us">
+                    <h5>Contact</h5>
+                    <address>
+                        <a href="tel:+442071234567">020 7123 4567</a>
+                        <a href="mailto:hello@pizzapalace.co.uk">hello@pizzapalace.co.uk</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="container">
+                <p>© 2026 Pizza Palace Ltd. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Accessiblity</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 

@@ -4,45 +4,41 @@ import renderAbout from "./about.js";
 import renderMenu from "./menu.js";
 
 const content = document.getElementById("content");
-const buttons = document.querySelectorAll("button");
+const navButtons = document.querySelectorAll(".nav-btn");
 
-let currentPage = "home"
+let currentPage = "home";
 
-//if e.target.dataset.page === currentPage, then return. else render
+// content.append(renderHome());
 
-content.append(renderHome())
+const pages = {
+  home: renderHome,
+  menu: renderMenu,
+  about: renderAbout,
+};
 
-buttons.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    const page = e.target.dataset.page;
+function setActivePage(page) {
+  if (page === currentPage) return;
 
-    if (!page) {
-      console.warn("Button is missing a data-page attribute:", e.target);
-      return;
-    }
+  currentPage = page;
 
-    if(page === currentPage) return
+  navButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.page === page);
+  });
 
-    currentPage = page;
-    content.innerHTML = "";
+  content.innerHTML = "";
+  content.append(pages[page]());
+}
 
-    switch (page) {
-      case "home":
-        content.append(renderHome());
-        console.log(currentPage)
-        break;
-
-      case "about":
-        content.append(renderAbout());
-        console.log(currentPage)
-        break;
-
-      case "menu":
-        content.append(renderMenu());
-        break;
-
-      default:
-        break;
-    }
+navButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    setActivePage(button.dataset.page);
   });
 });
+
+content.addEventListener("click", (e) => {
+  const page = e.target.dataset.page;
+  if (page) setActivePage(page);
+});
+
+
+// setActivePage("home");

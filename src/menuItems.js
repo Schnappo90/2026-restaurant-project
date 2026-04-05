@@ -5,6 +5,7 @@ const menuItems = [
         price: 10.99,
         vegetarian: true,
         calories: 750,
+        symbol: "&#129472;",
     },
     {
         name: "Pepperoni",
@@ -12,6 +13,7 @@ const menuItems = [
         price: 12.99,
         vegetarian: false,
         calories: 920,
+        symbol: "&#129385;",
     },
     {
         name: "BBQ Chicken",
@@ -19,6 +21,7 @@ const menuItems = [
         price: 13.99,
         vegetarian: false,
         calories: 870,
+        symbol: "&#127831;",
     },
     {
         name: "Funghi",

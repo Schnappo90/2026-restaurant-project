@@ -1,18 +1,12 @@
 export default function renderAbout() {
   const container = document.createElement("div");
-  container.classList.add("container");
+  container.classList.add("about-page","container");
 
   container.innerHTML = `                
                 <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit voluptas perspiciatis mollitia
-                    corrupti culpa officia voluptatem illo error, adipisci aut atque omnis placeat blanditiis unde
-                    cupiditate facilis iusto dolor est!
-                    Accusamus deleniti excepturi porro sed tenetur. Impedit temporibus, quia voluptatum omnis earum
-                    error. Laborum adipisci esse, pariatur qui exercitationem nostrum ab quibusdam asperiores, deserunt
-                    non numquam, sint quia vero nobis?
-                    Odit recusandae molestias qui, inventore aspernatur velit sapiente eum animi? Laborum, accusamus
-                    repellendus porro explicabo fugit omnis nobis aperiam veritatis, nam deserunt ullam inventore eaque
-                    illo commodi nemo magni quam.</p>`;
+                <p>Pizza Palace was founded in 2018 by two friends, Marco and Jamie, who were tired of settling for average takeaway pizza. Armed with a secondhand wood-fired oven, a family recipe for dough, and a stubborn refusal to use anything but the best ingredients, they started making pizzas for friends and family out of a small kitchen in East London.</p>
+                <p>Word spread fast. By 2020, Pizza Palace had its first dedicated kitchen and a small but loyal delivery radius. Today we deliver across the city, but our approach hasn't changed — every pizza is still hand-stretched, wood-fired, and made with ingredients we're genuinely proud of.</p>
+                <p>We believe fast food doesn't have to mean compromised food. It just means we're really, really good at what we do.</p>`;
 
   return container;
 }

@@ -25,7 +25,7 @@ export default function renderMenu() {
                     <p class="menu-item__description">${item.description}</p>
                     <div class="menu-item__footer">
                         <span class="menu-item__calories">${item.calories} kcal</span>
-                        ${item.vegetarian ? `<span class="menu-item__badge">V</span>` : ""}
+                        ${item.vegetarian ? `<span class="menu-item__badge">&#127793;</span>` : ""}
                     </div>
                 </li>`;
     ul.append(liEl);
